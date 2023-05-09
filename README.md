@@ -34,13 +34,13 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
  3 Output files description:
     1) `band.txt` - contains the band energies (in eV) you have given corresponding to the k-vectors (for sanity check) 
     format 
-    kx | ky | kz | energy for band 1 | energy for band 2 | ...  
+    kx | ky | kz | energy for band 1 | energy for band 2 | ...  <br>
     2) `quasienergy.txt` - contains the quasienergies (in eV) withing the fundamental FBZ. The number of quasienergies is equal to the number of bands in the computation and arranged according to the k-vectors
     Format:
-    kx | ky | kz | quasienergy for mode 1 | quasienergy for mode 2 | ...
+    kx | ky | kz | quasienergy for mode 1 | quasienergy for mode 2 | ... <br>
     3) `spec.txt` -  contains the laser-dressed spectrum for the drive amplitude and photon energy specified in the following format:
-    $`kx \hspace{0.5cm} |  \hspace{0.5cm} ky \hspace{0.5cm} | \hspace{0.5cm} kz \hspace{0.5cm} |\hspace{0.5cm}  \hbar\omega \hspace{0.5cm} |\hspace{0.5cm}  A(\omega) \hspace{0.5cm} |  \hspace{0.5cm} \alpha \hspace{0.5cm} | \hspace{0.5cm} \beta \hspace{0.5cm} | \hspace{0.5cm} n \hspace{0.5cm} |\hspace{0.5cm}  E_{\alpha}\hspace{0.5cm}  | \hspace{0.5cm} E_{\beta} \hspace{0.5cm} |  \hspace{0.5cm} \hspace{0.5cm} |\hspace{0.5cm} \mathcal{P}^{(n)}_{\alpha \beta}|^{2} \hspace{0.5cm} | \hspace{0.5cm} \Lambda_{\alpha \beta} \hspace{0.5cm} |\hspace{0.5cm}  \Lambda_{\beta \alpha} \hspace{0.5cm} `$
-    The transitions will be ordered according to the k-vectors.
+    $`kx \hspace{0.5cm} |  \hspace{0.5cm} ky \hspace{0.5cm} | \hspace{0.5cm} kz \hspace{0.5cm} |\hspace{0.5cm}  \hbar\omega \hspace{0.5cm} |\hspace{0.5cm}  A(\omega) \hspace{0.5cm} |  \hspace{0.5cm} \alpha \hspace{0.5cm} | \hspace{0.5cm} \beta \hspace{0.5cm} | \hspace{0.5cm} n \hspace{0.5cm} |\hspace{0.5cm}  E_{\alpha}\hspace{0.5cm}  | \hspace{0.5cm} E_{\beta} \hspace{0.5cm} |  \hspace{0.5cm} \hspace{0.5cm} |\hspace{0.5cm} \mathcal{P}^{(n)}_{\alpha \beta}|^{2} \hspace{0.5cm} | \hspace{0.5cm} \Lambda_{\alpha \beta} \hspace{0.5cm} |\hspace{0.5cm}  \Lambda_{\beta \alpha} \hspace{0.5cm} `$ <br>
+    The transitions will be ordered according to the k-vectors. <br>
     $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file <br>
     Units: 
