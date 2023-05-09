@@ -20,7 +20,7 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
  2) bandeng.txt         energy (in atomic units) of all bands in a single row 
  3) dipoledrive.txt     MME along drive laser polarization (in atomic units) 
  4) dipoleprobe.txt     MME along probe laser polarization (in atomic units)
- 5) initialoccup.txt    the initial occupation of the bands (either 0 (empty) or 1 (filled)), \bar{n}_{uk}, ordered according to the k-vectors
+ 5) initialoccup.txt    the initial occupation of the bands (either 0 (empty) or 1 (filled)), $`\bar{n}_{uk}`$, ordered according to the k-vectors
  6) inputscript.sh      Input script to specify the  parameters of system and laser
  
  For eg. if you have 11 bands and 500 k-vectors:
