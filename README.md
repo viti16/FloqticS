@@ -35,11 +35,9 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
     1) band.txt - contains the band energies (in eV) you have given corresponding to the k-vectors (for sanity check) 
     format 
     kx | ky | kz | energy for band 1 | energy for band 2 | ...  
-
     2) quasienergy.txt - contains the quasienergies (in eV) withing the fundamental FBZ. The number of quasienergies is equal to the number of bands in the computation and arranged according to the k-vectors
     Format:
     kx | ky | kz | quasienergy for mode 1 | quasienergy for mode 2 | ...
-
     3) spec.txt -  contains the laser-dressed spectrum for the drive amplitude and photon energy specified in the following format:
     $`kx | ky | kz | \hbar\omega | A(\omega) |  \alpha | \beta | n | E_{alpha} | E_{beta} |  |\mathcal{P}^{(n)}_{alpha beta}|^{2} | \Lamdba_{alpha beta} | \Lambda_{beta alpha} `$
     The transitions will be ordered according to the k-vectors.
