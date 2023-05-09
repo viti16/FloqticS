@@ -32,7 +32,6 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
  MME are complex numbers so if a MME is for e.g. 2+3i  then it should be written in input file dippoledrive.txt as (2,3). This is the FORTRAN complex number format. <br> Make sure to enter the correct command to compile the code using ELPA and mpiifort compiler or equivalent in inputscript.sh file according to your computer and location of ELPA directory. 
  
  Output files description:
- 
     1) `band.txt` - contains the band energies (in eV) you have given corresponding to the k-vectors (for sanity check) 
     format 
     kx | ky | kz | energy for band 1 | energy for band 2 | ...  <br>
