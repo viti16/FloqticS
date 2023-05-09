@@ -1,6 +1,6 @@
 # FloqticS code
-## Floquet theory and computational method for the optical absorption of laser-dressed solids
-## author: Vishal Tiwari, Bing Gu, Ignacio Franco
+ Floquet theory and computational method for the optical absorption of laser-dressed solids
+author: Vishal Tiwari, Bing Gu, Ignacio Franco
 
 Code: VIshal TIwari
  
