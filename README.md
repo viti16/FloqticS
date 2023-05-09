@@ -44,7 +44,7 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
     $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file <br>
     Units: 
-    $`kx,ky,kz`$                   --> $` angs^{-1} `$
+    $`kx,ky,kz`$                   --> $` A^{-1} `$
     $`\hbar\omega   `$             --> eV 
     $`A(\omega)  `$                --> $`m^{-1} `$
     $`E_{alpha,beta} `$            --> eV 
