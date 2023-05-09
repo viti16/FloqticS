@@ -29,8 +29,7 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
     dipoledrive.txt will have 11x500 rows and 11 columns, first 11 rows and 11 columns represent MME for a k-vector
     dipoleprobe.txt will have 11x500 rows and 11 columns, first 11 rows and 11 columns represent MME for a k-vector
     initialoccup.txt will have 500 rows and 11 columns, the occupation in each row must be ordered according to the band
-   
-    MME are complex numbers so if a MME is for e.g. 2+3i  then it should be written in input file dippoledrive.txt as (2,3). This is the FORTRAN complex number format
+  MME are complex numbers so if a MME is for e.g. 2+3i  then it should be written in input file dippoledrive.txt as (2,3). This is the FORTRAN complex number format
  
     Make sure to enter the correct command to compile the code using ELPA and mpiifort compiler or equivalent in inputscript.sh file according to your computer and location of ELPA directory. 
  
