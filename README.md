@@ -41,7 +41,7 @@ Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops App
     3) spec.txt -  contains the laser-dressed spectrum for the drive amplitude and photon energy specified in the following format:
     $`kx | ky | kz | \hbar\omega | A(\omega) |  \alpha | \beta | n | E_{alpha} | E_{beta} |  |\mathcal{P}^{(n)}_{alpha beta}|^{2} | \Lambda_{alpha beta} | \Lambda_{beta alpha} `$
     The transitions will be ordered according to the k-vectors.
-    $`\mathcal{P}`$ is the Fourier component of MME, $`\Lambda`$ is the population factor. For exact meaning of the above variables refer to the original paper.
+    $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file
     Units: 
     $`kx,ky,kz`$                   --> $` angs^{-1} `$
