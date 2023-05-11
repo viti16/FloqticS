@@ -63,3 +63,4 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
 
 The folder `test/` contains example input files used to compute the optical absorption in the paper for $`E_{d}=0.2`$ V/Å  and $`\hbar\Omega=0.5`$ eV with 11 bands and 500 k-points in BZ.
 
+For further questions or issues regarding the code please contact: Vishal Tiwari (vtiwari3@ur.rochester.edu)
