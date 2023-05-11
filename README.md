@@ -12,7 +12,7 @@ The code takes the k-vectors, band energies at corresponding k-vector, and momen
  
  
  
-Requirements: python,fortran compiler, impi, Eigenvalue soLver for Petaflops Application (ELPA) package
+Requirements: python,fortran compiler, impi, [Eigenvalue soLver for Petaflops Application (ELPA) package](https://elpa.mpcdf.mpg.de/)
 
 
  Input files description:
