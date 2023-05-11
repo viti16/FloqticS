@@ -44,11 +44,11 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
     $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file <br>
     Units: 
-    $`kx,ky,kz`$                   -->  Å$`^{-1} `$
-    $`\hbar\omega   `$             --> eV 
-    $`A(\omega)  `$                --> $`m^{-1} `$
-    $`E_{alpha,beta} `$            --> eV 
-    $`|P^{(n)}_{alpha beta}|^{2}`$ --> (eV fs Å$`^{-1})^{2} `$
+    $`kx,ky,kz`$                   -->  Å$`^{-1} `$ <br>
+    $`\hbar\omega   `$             --> eV  <br>
+    $`A(\omega)  `$                --> $`m^{-1} `$ <br>
+    $`E_{\alpha,\beta} `$            --> eV  <br>
+    $`|P^{(n)}_{\alpha \beta}|^{2}`$ --> (eV fs Å$`^{-1})^{2} `$ <br>
  
  The k-vectors are not used in the calculation but instead used as a index for transitions
  
