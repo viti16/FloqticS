@@ -44,11 +44,11 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
     $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file <br>
     Units: 
-    $`kx,ky,kz`$                   --> $` \textrm{\AA}^{-1} `$
+    $`kx,ky,kz`$                   --> $` \textrm{\r{A}}^{-1} `$
     $`\hbar\omega   `$             --> eV 
     $`A(\omega)  `$                --> $`m^{-1} `$
     $`E_{alpha,beta} `$            --> eV 
-    $`|P^{(n)}_{alpha beta}|^{2}`$ --> $`(eV fs \textrm{\AA}^{-1})^{2} `$
+    $`|P^{(n)}_{alpha beta}|^{2}`$ --> $`(eV fs \textrm{\r{A}}^{-1})^{2} `$
  
  The k-vectors are not used in the calculation but instead used as a index for transitions
  
@@ -61,5 +61,5 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
  6) Make sure the quasienergies obtained are converged w.r.t the number of time-periodic functions  and the absorption spectra is converged w.r.t the number of bands and k-vectors.
  7) You can run `lorentzfit.py` code to obtain the absorption spectrum where peaks are broadened using a Lorentzian function or use your own broadening function as well. The input  describing the broadening and the grid for spectrum is to be input in the file `lorentzfit.py`.
 
-The folder `test/` contains example input files used to compute the optical absorption in the paper for $`E_{d}=0.2`$ V/\textrm{\AA} and $`\hbar\Omega=0.5`$ eV with 11 bands and 500 k-points in BZ.
+The folder `test/` contains example input files used to compute the optical absorption in the paper for $`E_{d}=0.2`$ V/\textrm{\r{A}} and $`\hbar\Omega=0.5`$ eV with 11 bands and 500 k-points in BZ.
 
