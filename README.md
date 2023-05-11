@@ -12,7 +12,7 @@ The code takes the k-vectors $`(\mathbf{k})`$, band energies at corresponding k-
  
  
  
-Requirements: python (only for postprocessing),fortran compiler, impi, [Eigenvalue soLver for Petaflops Application (ELPA) package](https://elpa.mpcdf.mpg.de/)
+Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Eigenvalue soLver for Petaflops Application (ELPA) package](https://elpa.mpcdf.mpg.de/)
 
 
  Input files description:
