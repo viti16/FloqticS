@@ -8,7 +8,7 @@ Code: VIshal TIwari
  
 This is the README file containing the information to sucessfully run the code.
 
-The code takes the k-vectors $`(\mathbf{k})`$, band energies at corresponding k-vector $`(\epsilon_{u\mathbf{k}})`$, momentum matrix elements (MME) at corresponding k-vectors among the Bloch states along the direction of polarization of drive laser $`(\hat{\mathbf{e}}_{\text{d}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ and probe laser $`(\hat{\mathbf{e}}_{\text{p}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ at corresponding  k-vectors, and initial occupation of bands ($`\bar{n}_{uk}`$) and provides the laser-dressed absorption spectrum $`(A(\omega))`$, that is absorption coefficient as a function of probe laser photon energy. For meaning of notations see paper.
+The code takes the k-vectors $`(\mathbf{k})`$, band energies at corresponding k-vector $`(\epsilon_{u\mathbf{k}})`$, momentum matrix elements (MME) at corresponding k-vectors among the Bloch states along the direction of polarization of drive laser $`(\hat{\mathbf{e}}_{\text{d}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ and probe laser $`(\hat{\mathbf{e}}_{\text{p}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ at corresponding  k-vectors, and initial occupation of bands ($`\bar{n}_{u\mathbf{k}}`$) and provides the laser-dressed absorption spectrum $`(A(\omega))`$, that is absorption coefficient as a function of probe laser photon energy. For meaning of notations see paper.
  
  
  
@@ -20,7 +20,7 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
  2) `bandeng.txt `        energy (in atomic units) of all bands in a single row 
  3) `dipoledrive.txt`     MME along drive laser polarization (in atomic units) 
  4) `dipoleprobe.txt `    MME along probe laser polarization (in atomic units)
- 5) `initialoccup.txt`    the initial occupation of the bands (either 0 (empty) or 1 (filled)), $`\bar{n}_{uk}`$, ordered according to the k-vectors
+ 5) `initialoccup.txt`    the initial occupation of the bands (either 0 (empty) or 1 (filled)), $`\bar{n}_{u\mathbf{k}}`$, ordered according to the k-vectors
  6) `inputscript.sh`      Input script to specify the  parameters of system and laser
  
  For eg. if you have 11 bands and 500 k-vectors:
@@ -44,11 +44,11 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
     $`\mathcal{P}`$ is the Fourier component of MME, $` \Lambda `$ is the population factor. For exact meaning of the above variables refer to the original paper.
     If there are errors in running the code they will also be printed in spec.txt file <br>
     Units: 
-    $`kx,ky,kz`$                   --> $` A^{-1} `$
+    $`kx,ky,kz`$                   --> $` \AA^{-1} `$
     $`\hbar\omega   `$             --> eV 
     $`A(\omega)  `$                --> $`m^{-1} `$
     $`E_{alpha,beta} `$            --> eV 
-    $`|P^{(n)}_{alpha beta}|^{2}`$ --> $`(eV fs A^{-1})^{2} `$
+    $`|P^{(n)}_{alpha beta}|^{2}`$ --> $`(eV fs \AA^{-1})^{2} `$
  
  The k-vectors are not used in the calculation but instead used as a index for transitions
  
@@ -61,5 +61,5 @@ Requirements: Python (only for postprocessing), FORTRAN compiler, Intel MPI, [Ei
  6) Make sure the quasienergies obtained are converged w.r.t the number of time-periodic functions  and the absorption spectra is converged w.r.t the number of bands and k-vectors.
  7) You can run `lorentzfit.py` code to obtain the absorption spectrum where peaks are broadened using a Lorentzian function or use your own broadening function as well. The input  describing the broadening and the grid for spectrum is to be input in the file `lorentzfit.py`.
 
-The folder `test/` contains example input files used to compute the optical absorption in the paper for $`E_{d}=0.2`$ V/A and $`\hbar\Omega=0.5`$ eV with 11 bands and 500 k-points in BZ.
+The folder `test/` contains example input files used to compute the optical absorption in the paper for $`E_{d}=0.2`$ V/\AA and $`\hbar\Omega=0.5`$ eV with 11 bands and 500 k-points in BZ.
 
