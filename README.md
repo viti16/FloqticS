@@ -8,7 +8,7 @@ Code: VIshal TIwari
  
 This is the README file containing the information to sucessfully run the code.
 
-The code takes the k-vectors $`(\mathbf{k})`$, band energies at corresponding k-vector $`(\epsilon_{u\mathbf{k}})`$, and momentum matrix elements (MME) at corresponding k-vectors among the Bloch states along the direction of polarization of drive laser $`(\hat{\mathbf{e}}_{\text{d}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ and probe laser $`(\hat{\mathbf{e}}_{\text{p}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ at corresponding  k-vectors and provides the laser-dressed absorption spectrum $`(A(\omega))`$, that is absorption coefficient as a function of probe laser photon energy. For meaning of notations see paper.
+The code takes the k-vectors $`(\mathbf{k})`$, band energies at corresponding k-vector $`(\epsilon_{u\mathbf{k}})`$, momentum matrix elements (MME) at corresponding k-vectors among the Bloch states along the direction of polarization of drive laser $`(\hat{\mathbf{e}}_{\text{d}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ and probe laser $`(\hat{\mathbf{e}}_{\text{p}} \cdot \mathbf{p}_{u\mathbf{k},v\mathbf{k}})`$ at corresponding  k-vectors, and initial occupation of bands ($`\bar{n}_{uk}`$) and provides the laser-dressed absorption spectrum $`(A(\omega))`$, that is absorption coefficient as a function of probe laser photon energy. For meaning of notations see paper.
  
  
  
